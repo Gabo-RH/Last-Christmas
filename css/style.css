@@ -23,9 +23,8 @@ p {
 img {
     display: block;
     margin: 20px auto;
-    max-width: 100%;
-    border: 3px solid #ffd700;
-    border-radius: 10px;
+    max-width: 25%;
+
 }
 
 /* Spotify Embed */
@@ -69,7 +68,7 @@ body {
     margin: 0;
     padding: 0;
     font-family: 'Arial', sans-serif;
-    background-color: #002244; /* Dark background to match your theme */
+    background-color: black; /* Dark background to match your theme */
     color: #fff;
     overflow-x: hidden;
     position: relative;
@@ -176,8 +175,7 @@ nav.menu ul li a:hover {
 .slide {
     width: 100%;
     display: none;
-    border: 5px solid #ffd700;
-    border-radius: 10px;
+
 }
 
 .slide:first-child {
