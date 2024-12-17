@@ -1,54 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="stylesheet" href="css/style.css">
-
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Last Christmas</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="Script/Script.js" defer></script>
 </head>
 <body>
-<h1 class="">Insert Tittle </h1>
-<img src="" class="logo">
-<div class="Menu">
+<!-- Snow Animation -->
+<div class="snowfall"></div>
 
-   <div class="Menu items">
-    Home
-   </div>
+<!-- Dropdown Menu Trigger -->
+<div class="menu-button" onclick="toggleMenu()">▼</div>
 
-  <div class="Menu items">
-   Game rules
-  </div>
+<!-- Navigation Menu -->
+<nav class="menu" id="dropdownMenu">
+    <ul>
+        <li><a href="Index.html">Home</a></li>
+        <li><a href="Gamerules.html">Game Rules</a></li>
+        <li><a href="Liedjes.html">Liedjes</a></li>
+        <li><a href="Timer.html">Timer</a></li>
+        <li><a href="More.html">More</a></li>
+    </ul>
+</nav>
 
-  <div class="Menu items">
-   More
-  </div>
+<!-- Main Content -->
+<main>
+    <h1 class="title">🎄 Are you Ready to Save Christmas?! 🎅</h1>
 
+    <!-- Slideshow -->
+    <div class="slideshow-container">
+        <img class="slide" src="images/christmas1.jpg" alt="Christmas Fun">
+        <img class="slide" src="images/christmas2.jpg" alt="Christmas Gifts">
+        <img class="slide" src="images/christmas3.jpg" alt="Snowy Adventure">
+    </div>
 
-
-</div>
-
-<img src="" class="">
-
-
-<h1 class="Header1">
- Are you Ready to save Christmas!?
-</h1>
-
-
-<p class="">
-  This is a coperative boardgame that you can speel up to 4-8 the goal is to deliver all the gifts  to santa before
-  the time runs out or else the grinch will steal all the present and ruin christmas!!!!!!!!!!!!
-</p>
-
-
-
-
-
-
-
-
-
-
-<script src="Script/Script.js"> </script>
+    <p class="description">
+        This is a cooperative boardgame you can play with 4-8 players. The goal is to deliver all the gifts to Santa
+        before the time runs out! If not, the Grinch will steal all the presents and ruin Christmas! 🎁🎄
+    </p>
+</main>
 </body>
 </html>

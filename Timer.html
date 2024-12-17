@@ -2,9 +2,29 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Timer + Interactive </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Timer</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/script.js" defer></script>
 </head>
 <body>
+<div class="snowfall"></div>
+<nav class="menu" id="dropdownMenu">
+    <ul>
+        <li><a href="Index.html">Home</a></li>
+        <li><a href="Gamerules.html">Game Rules</a></li>
+        <li><a href="Liedjes.html">Liedjes</a></li>
+        <li><a href="Timer.html">Timer</a></li>
+        <li><a href="More.html">More</a></li>
+    </ul>
+</nav>
 
+<main>
+    <h1>Christmas Countdown Timer</h1>
+    <div>
+        <button onclick="setTimer()">Start Timer</button>
+    </div>
+    <h2 id="timer">0:00</h2>
+</main>
 </body>
 </html>
