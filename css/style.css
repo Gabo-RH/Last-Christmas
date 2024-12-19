@@ -259,6 +259,12 @@ nav.menu ul li a:hover {
     transform: translateY(-50%);
 }
 
+
+#grinch {
+    color: green;
+    outline: limegreen;
+}
+
 /* Media Queries for Responsiveness */
 @media screen and (max-width: 1200px) {
     h1 { font-size: 2rem; }
@@ -278,7 +284,7 @@ nav.menu ul li a:hover {
     .slideshow-container { width: 100%; }
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 425px) {
     h1 { font-size: 1.5rem; }
     p { font-size: 0.9rem; }
     .title { font-size: 1.8rem; }
