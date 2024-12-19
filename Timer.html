@@ -1,34 +1,35 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Timer</title>
-    <link rel="stylesheet" href="css/style.css">
-    <script src="Script/Script.js" defer></script>
+                <!DOCTYPE html>
+                <html lang="en">
+                <head>
+                    <meta charset="UTF-8">
+                    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                    <title>Timer</title>
+                    <link rel="stylesheet" href="css/style.css">
+                    <script src="Script/Script.js" defer></script>
 
-</head>
-<body>
+                </head>
+                <body>
 
-<div class="snowfall"></div>
-<div class="menu-button" onclick="toggleMenu()">▼</div>
+                <div class="snowfall"></div>
+                <div class="menu-button" onclick="toggleMenu()">▼</div>
 
-<nav class="menu" id="dropdownMenu">
-    <ul>
-        <li><a href="Index.html">Home</a></li>
-        <li><a href="Gamerules.html">Game Rules</a></li>
-        <li><a href="Liedjes.html">Liedjes</a></li>
-        <li><a href="Timer.html">Timer</a></li>
-        <li><a href="More.html">More</a></li>
-    </ul>
-</nav>
+                <nav class="menu" id="dropdownMenu">
+                    <ul>
+                        <li class="nav-item"><a href="Index.html">Home</a></li>
+                        <li class="nav-item"><a href="Gamerules.html">Game Rules</a></li>
+                        <li class="nav-item"><a href="Liedjes.html">Liedjes</a></li>
+                        <li class="nav-item"><a href="Timer.html">Timer</a></li>
+                        <li class="nav-item"><a href="More.html">More</a></li>
+                    </ul>
+                </nav>
 
-<main>
-    <h1>Christmas Countdown Timer</h1>
-    <div>
-        <button onclick="setTimer()">Start Timer</button>
-    </div>
-    <h2 id="timer">0:00</h2>
-</main>
-</body>
-</html>
+                <main>
+                    <h1 class="title">Christmas Countdown Timer</h1>
+
+                    <div class="timer-container">
+                        <h2 id="timer">0:00</h2>
+                        <button onclick="setTimer()">Start Timer</button>
+                    </div>
+                </main>
+                </body>
+                </html>

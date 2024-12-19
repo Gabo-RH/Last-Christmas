@@ -1,3 +1,16 @@
+// Add 'loaded' class to body after the page has fully loaded
+window.addEventListener('load', () => {
+    document.documentElement.classList.add('loaded');
+});
+
+// Add a fade-in effect when navigating
+function fadePage() {
+    document.body.classList.add('fade-in');
+    setTimeout(() => {
+        document.body.classList.remove('fade-in');
+    }, 500); // Adjust timing to match the transition
+}
+
 // Menu toggle function
 function toggleMenu() {
     const menu = document.getElementById('dropdownMenu');
@@ -12,8 +25,6 @@ function toggleMenu() {
     }
 }
 
-
-
 // Image Slider
 let slideIndex = 0;
 const slides = document.querySelectorAll('.slide');
@@ -26,13 +37,11 @@ function showSlides() {
     setTimeout(showSlides, 3000);
 }
 
-
-
 showSlides();
 
-// Timer Functionality
-function startTimer(durationInSeconds) {
-    let timer = durationInSeconds;
+// Timer Functionality (in minutes)
+function startTimer(durationInMinutes) {
+    let timer = durationInMinutes * 60; // Convert minutes to seconds
     const display = document.getElementById('timer');
 
     const interval = setInterval(() => {
@@ -50,11 +59,18 @@ function startTimer(durationInSeconds) {
 }
 
 function setTimer() {
-    const inputTime = prompt("Enter time in seconds:");
+    const inputTime = prompt("Enter time in minutes:");
     if (!isNaN(inputTime) && inputTime > 0) {
-        startTimer(Number(inputTime));
+        startTimer(Number(inputTime));  // Pass the input as minutes
     } else {
         alert("Please enter a valid number!");
     }
 }
 
+// Handle page transition when a menu item is clicked
+document.querySelectorAll('.menu-button').forEach(button => {
+    button.addEventListener('click', () => {
+        fadePage();
+        // Your page-changing logic goes here
+    });
+});
