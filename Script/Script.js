@@ -60,7 +60,7 @@ function startTimer(durationInMinutes) {
 
 function setTimer() {
     const inputTime = prompt("Enter time in minutes:");
-    if (!isNaN(inputTime) && inputTime > 0) {
+    if (!isNaN(inputTime) && inputTime == 25  ) {
         startTimer(Number(inputTime));  // Pass the input as minutes
     } else {
         alert("Please enter a valid number!");

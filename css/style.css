@@ -284,7 +284,7 @@ nav.menu ul li a:hover {
     .slideshow-container { width: 100%; }
 }
 
-@media screen and (max-width: 425px) {
+@media screen and (max-width: 430px) {
     h1 { font-size: 1.5rem; }
     p { font-size: 0.9rem; }
     .title { font-size: 1.8rem; }
@@ -292,4 +292,11 @@ nav.menu ul li a:hover {
     .description { font-size: 1rem; padding: 5px; }
     img { max-width: 70%; }
     button { font-size: 1rem; padding: 8px 16px; }
+    nav.menu ul {
+        flex-direction: column;
+        align-items: center;
+    }
+    nav.menu ul li {
+        margin: 5px 0;
+    }
 }
